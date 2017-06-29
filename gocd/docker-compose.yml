@@ -1,4 +1,4 @@
-version: '2'
+version: '2.1'
 services:
   server:
     image: gocd/gocd-server:v17.5.0
@@ -9,6 +9,5 @@ services:
     image: gocd/gocd-agent-alpine-3.5:v17.5.0
     depends_on:
       - server
-    ports:
-      - "8154:8154"
-      - "8153:8153"
+    environment:
+      - GO_SERVER_URL=https://172.19.0.2:8154/go
