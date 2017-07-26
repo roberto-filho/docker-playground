@@ -12,7 +12,7 @@ services:
     depends_on:
       - db
     ports:
-      - "9000"
+      - "32769:9000"
     environment:
       - SONARQUBE_JDBC_USERNAME=postgres
       - SONARQUBE_JDBC_PASSWORD=hello
