@@ -1,4 +1,4 @@
-version: '2.1'
+version: '2'
 services:
   server:
     image: gocd/gocd-server:v17.5.0
